@@ -1,0 +1,21 @@
+# robots.txt — roman-bandurin.github.io root catalog
+# This file governs the whole host, including project paths like /crypto/.
+# Citation crawlers (surfacing this site in AI answers) are allowed.
+# Training crawlers are allowed too; add disallow rules here only deliberately.
+
+User-agent: *
+Allow: /
+
+# Explicitly allow agent-readability surfaces
+Allow: /llms.txt
+Allow: /AGENTS.md
+Allow: /index.md
+Allow: /sitemap.md
+Allow: /crypto/llms.txt
+Allow: /crypto/llms-full.txt
+Allow: /crypto/AGENTS.md
+Allow: /crypto/index.md
+
+# Sitemaps (root + per-project)
+Sitemap: https://roman-bandurin.github.io/sitemap.xml
+Sitemap: https://roman-bandurin.github.io/crypto/sitemap.xml

@@ -1,0 +1,23 @@
+# Roman Bandurin — Projects Catalog
+
+> Catalog of projects published on GitHub Pages by Roman Bandurin. Each project is
+> published from its own repository under its own path; this root site is the directory.
+
+## Projects
+
+- [Crypto — Web Crypto API Playground & Agentic Tool Server](/crypto/): browser-based
+  cryptography playground (digests, encryption, signatures, key generation) with an AI
+  chat and WebMCP tool server. Fully client-side, no backend.
+  - Documentation: [/crypto/llms.txt](/crypto/llms.txt),
+    [/crypto/llms-full.txt](/crypto/llms-full.txt),
+    [/crypto/AGENTS.md](/crypto/AGENTS.md),
+    [/crypto/index.md](/crypto/index.md),
+    [/crypto/openapi.json](/crypto/openapi.json)
+
+## Site
+
+- [/llms-full.txt](/llms-full.txt): full documentation of this catalog
+- [/AGENTS.md](/AGENTS.md): instructions for agents
+- [/index.md](/index.md): markdown mirror of this page
+- [/sitemap.md](/sitemap.md): structured map of agent-readable surfaces
+- [/sitemap.xml](/sitemap.xml): XML sitemap
