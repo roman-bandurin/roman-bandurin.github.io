@@ -1,0 +1,3 @@
+# Disable Jekyll processing on GitHub Pages.
+# Without this file Jekyll converts index.md (with YAML frontmatter) into an
+# HTML page, which breaks the markdown mirror at /index.md (404 in scans).
