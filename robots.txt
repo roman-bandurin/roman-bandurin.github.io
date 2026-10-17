@@ -8,13 +8,17 @@ Allow: /
 
 # Explicitly allow agent-readability surfaces
 Allow: /llms.txt
+Allow: /llms-full.txt
 Allow: /AGENTS.md
 Allow: /index.md
+Allow: /glossary.md
+Allow: /openapi.json
 Allow: /sitemap.md
 Allow: /crypto/llms.txt
 Allow: /crypto/llms-full.txt
 Allow: /crypto/AGENTS.md
 Allow: /crypto/index.md
+Allow: /crypto/openapi.json
 
 # Sitemaps (root + per-project)
 Sitemap: https://roman-bandurin.github.io/sitemap.xml

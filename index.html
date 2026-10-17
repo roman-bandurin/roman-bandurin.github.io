@@ -60,9 +60,26 @@
         Agent-readable surfaces: <a href="/llms.txt">llms.txt</a> (this catalog's short index),
         <a href="/AGENTS.md">AGENTS.md</a> (agent instructions), <a href="/index.md">index.md</a>
         (markdown mirror), <a href="/sitemap.md">sitemap.md</a> (structured map),
-        <a href="/sitemap.xml">sitemap.xml</a> (XML sitemap).
+        <a href="/sitemap.xml">sitemap.xml</a> (XML sitemap),
+        <a href="/openapi.json">openapi.json</a> (machine-readable contract).
         Per-project documentation lives inside each project path (for example,
         <a href="/crypto/llms.txt">/crypto/llms.txt</a>).
+      </p>
+
+      <h2>Glossary</h2>
+      <p>
+        Terms used across the agent documentation of this catalog and its projects:
+        an <strong>agent discovery surface</strong> is a non-HTML file an agent is
+        expected to fetch first (<a href="/llms.txt">llms.txt</a>,
+        <a href="/AGENTS.md">AGENTS.md</a>, <a href="/sitemap.md">sitemap.md</a>,
+        <a href="/index.md">index.md</a>); a <strong>markdown mirror</strong> is the
+        <code>index.md</code> rendition of an HTML page, linked from it with
+        <code>rel="alternate" type="text/markdown"</code>; a <strong>discovery
+        contract</strong> is the OpenAPI description of a site's own surfaces, published
+        here at <a href="/openapi.json">openapi.json</a> and per project under its own
+        path. Cryptographic terms (digest, symmetric and asymmetric encryption, digital
+        signature, HMAC, hex string, SPKI/PKCS#8) are defined in
+        <a href="/glossary.md">glossary.md</a>.
       </p>
     </main>
   </body>

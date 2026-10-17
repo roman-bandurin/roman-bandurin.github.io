@@ -5,19 +5,21 @@
 
 ## Projects
 
-- [Crypto — Web Crypto API Playground & Agentic Tool Server](/crypto/): browser-based
+- [Crypto — Web Crypto API Playground & Agentic Tool Server](https://roman-bandurin.github.io/crypto/): browser-based
   cryptography playground (digests, encryption, signatures, key generation) with an AI
   chat and WebMCP tool server. Fully client-side, no backend.
-  - Documentation: [/crypto/llms.txt](/crypto/llms.txt),
-    [/crypto/llms-full.txt](/crypto/llms-full.txt),
-    [/crypto/AGENTS.md](/crypto/AGENTS.md),
-    [/crypto/index.md](/crypto/index.md),
-    [/crypto/openapi.json](/crypto/openapi.json)
+  - Documentation: [https://roman-bandurin.github.io/crypto/llms.txt](https://roman-bandurin.github.io/crypto/llms.txt),
+    [https://roman-bandurin.github.io/crypto/llms-full.txt](https://roman-bandurin.github.io/crypto/llms-full.txt),
+    [https://roman-bandurin.github.io/crypto/AGENTS.md](https://roman-bandurin.github.io/crypto/AGENTS.md),
+    [https://roman-bandurin.github.io/crypto/index.md](https://roman-bandurin.github.io/crypto/index.md),
+    [https://roman-bandurin.github.io/crypto/openapi.json](https://roman-bandurin.github.io/crypto/openapi.json)
 
 ## Site
 
-- [/llms-full.txt](/llms-full.txt): full documentation of this catalog
-- [/AGENTS.md](/AGENTS.md): instructions for agents
-- [/index.md](/index.md): markdown mirror of this page
-- [/sitemap.md](/sitemap.md): structured map of agent-readable surfaces
-- [/sitemap.xml](/sitemap.xml): XML sitemap
+- [https://roman-bandurin.github.io/llms-full.txt](https://roman-bandurin.github.io/llms-full.txt): full documentation of this catalog
+- [https://roman-bandurin.github.io/AGENTS.md](https://roman-bandurin.github.io/AGENTS.md): instructions for agents
+- [https://roman-bandurin.github.io/index.md](https://roman-bandurin.github.io/index.md): markdown mirror of this page
+- [https://roman-bandurin.github.io/glossary.md](https://roman-bandurin.github.io/glossary.md): glossary of discovery, protocol and cryptographic terms
+- [https://roman-bandurin.github.io/openapi.json](https://roman-bandurin.github.io/openapi.json): machine-readable catalog contract
+- [https://roman-bandurin.github.io/sitemap.md](https://roman-bandurin.github.io/sitemap.md): structured map of agent-readable surfaces
+- [https://roman-bandurin.github.io/sitemap.xml](https://roman-bandurin.github.io/sitemap.xml): XML sitemap

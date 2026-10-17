@@ -11,8 +11,15 @@ this web site.
 
 - Static HTML, no build step, no backend. All files at the repository root are served
   as-is by GitHub Pages at `https://roman-bandurin.github.io/`.
-- Content changes are plain edits to `index.html`, `llms.txt`, `AGENTS.md`,
-  `index.md`, `sitemap.md`, `sitemap.xml`, `robots.txt`.
+- Content changes are plain edits to `index.html`, `llms.txt`, `llms-full.txt`,
+  `AGENTS.md`, `index.md`, `glossary.md`, `openapi.json`, `sitemap.md`,
+  `sitemap.xml`, `robots.txt`.
+- `.nojekyll` at the repository root is required: without it GitHub Pages runs
+  Jekyll, which converts Markdown files that carry YAML frontmatter (for example
+  `index.md` and `glossary.md`) into HTML instead of serving them verbatim.
+- `openapi.json` is intentionally published at the root: it describes the catalog's
+  own static surfaces, so agents discover the contract before descending into a
+  project. Project contracts live under their own path (`/crypto/openapi.json`).
 
 ## Usage
 
@@ -23,9 +30,22 @@ this web site.
 ## Architecture
 
 - `index.html` — catalog page with links to projects and their agent surfaces.
-- `llms.txt` — short LLM-facing directory (llmstxt.org format).
+- `llms.txt` / `llms-full.txt` — LLM-facing directory and full documentation
+  (llmstxt.org format, absolute URLs).
+- `AGENTS.md` — this file.
 - `index.md` — markdown mirror of the catalog page.
+- `glossary.md` — glossary of the discovery, protocol and cryptographic terms used
+  across the catalog and its projects.
+- `openapi.json` — OpenAPI 3.1 contract of the catalog's static surfaces.
 - `sitemap.md` / `sitemap.xml` — maps of agent-readable surfaces.
+- `robots.txt` — crawler policy for the whole host, including project paths.
+
+## Sitemap
+
+- [sitemap.md](/sitemap.md): structured map of every agent-readable surface
+- [sitemap.xml](/sitemap.xml): XML sitemap with `lastmod` dates
+- [glossary.md](/glossary.md): glossary of terms
+- [openapi.json](/openapi.json): machine-readable catalog contract
 
 ## Projects
 

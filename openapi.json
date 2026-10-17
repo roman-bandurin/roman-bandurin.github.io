@@ -1,0 +1,161 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Roman Bandurin — Projects Catalog Agent API",
+    "description": "Describes the agent-readable surface of the root catalog at https://roman-bandurin.github.io/. Every operation is a plain GET of a static file served by GitHub Pages; there is no server-side endpoint and no state. Each project published under this domain keeps its own contract under its own path (for example /crypto/openapi.json) and is reachable from the catalog operations listed here.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://roman-bandurin.github.io",
+      "description": "Static GitHub Pages origin of the root catalog"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "getCatalogIndex",
+        "summary": "Catalog page (HTML)",
+        "responses": {
+          "200": {
+            "description": "HTML index of all projects published under this domain",
+            "content": { "text/html": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "operationId": "getLlmsTxt",
+        "summary": "Short LLM-facing directory (llmstxt.org)",
+        "responses": {
+          "200": {
+            "description": "Directory of projects and their agent surfaces",
+            "content": { "text/plain": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "operationId": "getLlmsFullTxt",
+        "summary": "Full catalog documentation (llmstxt.org)",
+        "responses": {
+          "200": {
+            "description": "Full documentation of the catalog and its projects",
+            "content": { "text/plain": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/AGENTS.md": {
+      "get": {
+        "operationId": "getAgentsInstructions",
+        "summary": "Agent instructions for the root catalog",
+        "responses": {
+          "200": {
+            "description": "Plain-Markdown instructions for AI agents",
+            "content": { "text/markdown": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/index.md": {
+      "get": {
+        "operationId": "getIndexMarkdown",
+        "summary": "Markdown mirror of the catalog page",
+        "responses": {
+          "200": {
+            "description": "Markdown rendition of the catalog page with YAML frontmatter",
+            "content": { "text/markdown": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/glossary.md": {
+      "get": {
+        "operationId": "getGlossary",
+        "summary": "Glossary of the terms used across the agent documentation",
+        "responses": {
+          "200": {
+            "description": "Markdown glossary of discovery, protocol and cryptographic terms",
+            "content": { "text/markdown": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/sitemap.md": {
+      "get": {
+        "operationId": "getSitemapMarkdown",
+        "summary": "Structured map of agent-readable surfaces",
+        "responses": {
+          "200": {
+            "description": "Markdown sitemap of every surface published under this domain",
+            "content": { "text/markdown": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/sitemap.xml": {
+      "get": {
+        "operationId": "getSitemapXml",
+        "summary": "XML sitemap with lastmod dates",
+        "responses": {
+          "200": {
+            "description": "XML sitemap covering root and per-project pages",
+            "content": { "application/xml": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/robots.txt": {
+      "get": {
+        "operationId": "getRobotsTxt",
+        "summary": "Crawler policy for the whole host",
+        "responses": {
+          "200": {
+            "description": "robots.txt governing the root and every project path",
+            "content": { "text/plain": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/openapi.json": {
+      "get": {
+        "operationId": "getCatalogContract",
+        "summary": "This catalog contract",
+        "responses": {
+          "200": {
+            "description": "OpenAPI 3.1 description of the catalog surface",
+            "content": { "application/json": { "schema": { "type": "object" } } }
+          }
+        }
+      }
+    },
+    "/crypto/": {
+      "get": {
+        "operationId": "getCryptoApplication",
+        "summary": "Crypto — Web Crypto API Playground & Agentic Tool Server",
+        "description": "Browser-based cryptography playground with an AI chat and a WebMCP tool server. Its agent surfaces (llms.txt, AGENTS.md, index.md, openapi.json, .well-known manifests) are documented under /crypto/ in sitemap.md.",
+        "responses": {
+          "200": {
+            "description": "HTML application page",
+            "content": { "text/html": { "schema": { "type": "string" } } }
+          }
+        }
+      }
+    },
+    "/crypto/openapi.json": {
+      "get": {
+        "operationId": "getCryptoContract",
+        "summary": "Crypto project contract (agent tools, digests, signatures)",
+        "responses": {
+          "200": {
+            "description": "OpenAPI 3.1 description of the crypto playground surface",
+            "content": { "application/json": { "schema": { "type": "object" } } }
+          }
+        }
+      }
+    }
+  }
+}
